@@ -260,5 +260,15 @@ End main
  
  ```
 
+- **CONCURRENCY**
 
-```
+![image](https://user-images.githubusercontent.com/29571875/128905958-1e8bc0e8-22b4-4e6a-bf07-66f730900ecb.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/29571875/128906051-8f098a04-bc70-4c6a-a0ff-0de4d6a48173.png)
+
+
+
+
