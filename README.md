@@ -272,5 +272,7 @@ End main
 ![image](https://user-images.githubusercontent.com/29571875/128906051-8f098a04-bc70-4c6a-a0ff-0de4d6a48173.png)
 
 
+# Object level Lock and Class level Lock
 
+https://java2blog.com/object-level-locking-vs-class-level-locking-java/
 
