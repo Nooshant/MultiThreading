@@ -1,6 +1,8 @@
 # MultiThreading
 MultiThreading related info
 
+- Video Link
+   Best https://www.youtube.com/watch?v=J3QZ5gfCtAg&ab_channel=DefogTech
 
 # CountDownLatch
 A CountDownLatch is a construct that a thread waits on while other threads count down on the latch until it reaches zero.
