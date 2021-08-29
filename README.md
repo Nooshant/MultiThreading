@@ -9,9 +9,31 @@ A CountDownLatch is a construct that a thread waits on while other threads count
 We can think of this like a dish at a restaurant that is being prepared. No matter which cook prepares however many of the n items, the waiter must wait
 until all the items are on the plate. If a plate takes n items, any cook will count down on the latch for each item she puts on the plate.
 
+![image](https://user-images.githubusercontent.com/29571875/131259466-9eb701a1-633a-4c97-ab21-b001a711d2d1.png)
+
+Main thread has to wait on method `latch.await()` to reach to zero count to continue and `latch.countdown()` will decrease the count down by one.
+
+![image](https://user-images.githubusercontent.com/29571875/131259528-a612cf32-c903-41ed-b1a4-c965e98ff6c5.png)
+
+from read point, now after completion of latch work main thread started.
+
+
 # CyclicBarrier
-A CyclicBarrier is a reusable construct where a group of threads waits together until all of the threads arrive. At that point, the barrier is broken and an action can optionally be taken.
-We can think of this like a group of friends. Every time they plan to eat at a restaurant they decide a common point where they can meet. They wait for each other there, and only when everyone arrives can they go to the restaurant to eat together.
+A CyclicBarrier is a reusable construct where a group of threads waits together until all of the threads arrive. At that point, the barrier is broken and an action
+can optionally be taken.
+We can think of this like a group of friends. Every time they plan to eat at a restaurant they decide a common point where they can meet. They wait for each 
+other there, and only when everyone arrives can they go to the restaurant to eat together.
+
+![image](https://user-images.githubusercontent.com/29571875/131259569-e28a34a0-6a23-402c-b4bf-8ca41ea4c901.png)
+
+All the the thread after execution has to come one by one and wait on `barrier.await()` method to move further if any one has not reached then
+other has to come and wait. Once all reach to one point then it will start execution.
+
+![image](https://user-images.githubusercontent.com/29571875/131259653-8b1531e0-1027-4bad-b096-3a1ff1d1db1c.png)
+
+# Phaser 
+It is combination of CyclicBarrier and CountDownLatch.
+![image](https://user-images.githubusercontent.com/29571875/131259713-3ab89427-abde-4e96-844b-20636ba2ee93.png)
 
 
 
@@ -160,6 +182,12 @@ Waiting for FutureTask2 to complete
 FutureTask2 output=FutureTask2 is complete
 Both FutureTask Complete
 ```
+
+# CompletableFuture in java-8
+Future get() method is blocking in nature means until and unless you don't have result it will block the main thread.
+
+https://www.javatpoint.com/completablefuture-in-java
+https://www.youtube.com/watch?v=ImtZgX1nmr8&ab_channel=DefogTech
 
 
 # Reentrant Lock:
