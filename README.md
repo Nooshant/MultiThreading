@@ -189,6 +189,22 @@ Future get() method is blocking in nature means until and unless you don't have 
 https://www.javatpoint.com/completablefuture-in-java
 https://www.youtube.com/watch?v=ImtZgX1nmr8&ab_channel=DefogTech
 
+![image](https://user-images.githubusercontent.com/29571875/135745468-3e7cbbd1-2ca2-4a17-9d0d-461246920825.png)
+![image](https://user-images.githubusercontent.com/29571875/135745534-03413a6f-a852-4f18-aaf3-3cde59946869.png)
+
+The thread will be blocked for next option until and unless it is not done.
+Suppose next thread is waiting for this result to process further so here get() method will block until it is not completed.
+means it will block the other thread(main-thread) to process.
+
+![image](https://user-images.githubusercontent.com/29571875/135747439-ad13301d-37f9-4971-9ce1-8461a8711312.png)
+
+
+
+![image](https://user-images.githubusercontent.com/29571875/135747513-4c330732-7026-4900-b91a-fa808de7827a.png)
+Exception can be handle for one complete flow Async operation.
+
+
+
 
 # Reentrant Lock:
 
