@@ -186,6 +186,12 @@ Both FutureTask Complete
 # CompletableFuture in java-8
 Future get() method is blocking in nature means until and unless you don't have result it will block the main thread.
 
+1. Non-blocking
+2. Ability to Programmatically completing a future(using complete("") method)
+3. Perform Error handling
+4. Ability to Chain several futures
+5. Ability to combine results of multiple futures (that run in parallel)
+
 https://www.javatpoint.com/completablefuture-in-java
 https://www.youtube.com/watch?v=ImtZgX1nmr8&ab_channel=DefogTech
 
