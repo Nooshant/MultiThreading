@@ -376,3 +376,29 @@ public class CreateDeadLoackDemo2 {
 
 # ReentrantReadWriteLock
 
+
+# Semaphore
+
+
+When we wanted to restrict the no. of call at a time to any Resource we can use semaphore and has overloaded method like.
+
+![image](https://user-images.githubusercontent.com/29571875/136698441-2dc98b69-5ee5-4f23-93c4-7d1470280c1c.png)
+
+![image](https://user-images.githubusercontent.com/29571875/136698041-879fc6fc-ce3f-4120-8a32-7e0593b2989e.png)
+
+When we want restrict the call from application to Slow service(eg. example) since Slow service which is the shared resource can take only three request at a time.
+
+It has acquire() and release() method. Acquire method is used to acquire the lock.
+``
+ // acquiring the lock
+                sem.acquire();
+``
+> Semaphore sem = new Semaphore(1);
+This is the way to provide the no. of permits at creation time.
+
+![image](https://user-images.githubusercontent.com/29571875/136698299-dbaef03d-bdb0-4d4d-9ee4-d107fd8422c1.png)
+
+![image](https://user-images.githubusercontent.com/29571875/136698337-e93958e5-a781-4a7a-80a7-e4d9684ea1b3.png)
+
+
+
