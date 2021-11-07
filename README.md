@@ -37,7 +37,17 @@ other has to come and wait. Once all reach to one point then it will start execu
 ![image](https://user-images.githubusercontent.com/29571875/131259653-8b1531e0-1027-4bad-b096-3a1ff1d1db1c.png)
 
 # Phaser 
-It is combination of CyclicBarrier and CountDownLatch.
+It is combination of CyclicBarrier and CountDownLatch and it can act as CyclicBarrier or CountDownLatch.
+
+As similar to CountDownLatch:-
+
+![image](https://user-images.githubusercontent.com/29571875/140633361-744dfb70-f4f9-4ffe-966f-3d23e02a0220.png)
+
+As similar to CyclicBarrier:-
+
+![image](https://user-images.githubusercontent.com/29571875/140633442-3d36632c-a529-481e-a9b3-4a29bdf703a6.png)
+
+
 ![image](https://user-images.githubusercontent.com/29571875/131259713-3ab89427-abde-4e96-844b-20636ba2ee93.png)
 
 
