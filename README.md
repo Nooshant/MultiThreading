@@ -5,6 +5,11 @@ MultiThreading related info
    Best https://www.youtube.com/watch?v=J3QZ5gfCtAg&ab_channel=DefogTech
 
 # CountDownLatch
+
+- CountDownLatch is a concurrency construct that allows one or more threads to wait for a given set of operations to complete. A CountDownLatch
+ is initialized with a given count. This count is decremented by calls to the countDown() method. ... Calling await() blocks the thread until the count reaches zero.
+
+
 A CountDownLatch is a construct that a thread waits on while other threads count down on the latch until it reaches zero.
 We can think of this like a dish at a restaurant that is being prepared. No matter which cook prepares however many of the n items, the waiter must wait
 until all the items are on the plate. If a plate takes n items, any cook will count down on the latch for each item she puts on the plate.
