@@ -32,7 +32,7 @@ other there, and only when everyone arrives can they go to the restaurant to eat
 ![image](https://user-images.githubusercontent.com/29571875/131259569-e28a34a0-6a23-402c-b4bf-8ca41ea4c901.png)
 
 All the the thread after execution has to come one by one and wait on `barrier.await()` method to move further if any one has not reached then
-other has to come and wait. Once all reach to one point then it will start execution.
+other has to come and wait. Once all reach to one point then it will start execution..
 
 ![image](https://user-images.githubusercontent.com/29571875/131259653-8b1531e0-1027-4bad-b096-3a1ff1d1db1c.png)
 
