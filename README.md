@@ -429,7 +429,8 @@ This is the way to provide the no. of permits at creation time.
 
 
 #
-volatile:
+
+**volatile:**
 
 volatile is a keyword. volatile forces all threads to get latest value of the variable from main memory instead of cache. No locking is required to access volatile variables. All threads can access volatile variable value at same time.
 
@@ -439,7 +440,7 @@ This means that changes to a volatile variable are always visible to other threa
 
 When to use: One thread modifies the data and other threads have to read latest value of data. Other threads will take some action but they won't update data.
 
-AtomicXXX:
+**AtomicXXX:**
 
 AtomicXXX classes support lock-free thread-safe programming on single variables. These AtomicXXX classes (like AtomicInteger) resolves memory inconsistency errors / side effects of modification of volatile variables, which have been accessed in multiple threads.
 
