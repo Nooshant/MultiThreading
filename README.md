@@ -397,6 +397,10 @@ public class CreateDeadLoackDemo2 {
 
 # ReentrantReadWriteLock
 
+![image](https://user-images.githubusercontent.com/29571875/141689663-7761a2cb-a0bc-4494-a6e9-13d4ce0d59f7.png)
+- Create separate thread for read and write operation
+- Both the read thread will be allowed to acquire the lock and accedd the readResource at a time.
+
 
 # Semaphore
 
@@ -424,3 +428,19 @@ This is the way to provide the no. of permits at creation time.
 ![image](https://user-images.githubusercontent.com/29571875/136698496-8d9c1d79-f386-441f-a54a-8ac504b4c058.png)
 
 
+#
+volatile:
+
+volatile is a keyword. volatile forces all threads to get latest value of the variable from main memory instead of cache. No locking is required to access volatile variables. All threads can access volatile variable value at same time.
+
+Using volatile variables reduces the risk of memory consistency errors, because any write to a volatile variable establishes a happens-before relationship with subsequent reads of that same variable.
+
+This means that changes to a volatile variable are always visible to other threads. What's more, it also means that when a thread reads a volatile variable, it sees not just the latest change to the volatile, but also the side effects of the code that led up the change.
+
+When to use: One thread modifies the data and other threads have to read latest value of data. Other threads will take some action but they won't update data.
+
+AtomicXXX:
+
+AtomicXXX classes support lock-free thread-safe programming on single variables. These AtomicXXX classes (like AtomicInteger) resolves memory inconsistency errors / side effects of modification of volatile variables, which have been accessed in multiple threads.
+
+When to use: Multiple threads can read and modify data.
