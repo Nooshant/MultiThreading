@@ -4,6 +4,9 @@ MultiThreading related info
 - Video Link
    Best https://www.youtube.com/watch?v=J3QZ5gfCtAg&ab_channel=DefogTech
 
+# 
+Java 8 new feature **StampedLock** https://stackoverflow.com/questions/26094200/what-is-stampedlock-in-java
+
 # CountDownLatch
 
 - CountDownLatch is a concurrency construct that allows one or more threads to wait for a given set of operations to complete. A CountDownLatch
